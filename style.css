@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:ital,wght@1,500&family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar{
+    position: absolute;
+    background-color: lightgrey;
+    height: 152vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: transform 0.3s ease-in;
+}
+
+
+.sidebar nav{
+    padding: 45px;
+}
+
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+
+.sidebar nav li a{
+    text-decoration: none;  
+    color:  rgb(1, 77, 77);  
+}
+
+
+.main{
+    background-color: lightseagreen;
+    width: 150vw;
+}
+
+
+.container{
+    display:flex
+}
+
+
+.infocontainer{
+    background-color: lightgrey;
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.devinfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Roboto;
+    margin-left: 30px;
+    width: 50vw;
+}
+
+
+.hello{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.name{
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: Roboto;
+    color: rgb(0, 46, 46);
+}
+
+
+.about{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+.moreabout{
+    font-size: 1.3em;
+    font-family: Roboto;
+    margin-top: 23px;
+}
+
+
+.buttons{
+    margin-top: 14px;
+    font-size: 10px;
+}
+
+
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(0, 100, 100);
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+
+.btn-sm{
+    font-size: 14px;
+    padding: 10px 19px;
+    margin: 12px 0;
+}
+
+
+.btn:hover{
+    background-color: white;
+    color: rgb(0, 100, 100);
+}
+
+
+.devpic img{
+    height: 58vh;
+    margin-right: 30px;
+    /* padding-top: 0px; */
+}
+
+
+.contactform{
+    padding: 0px 34px;
+    margin: 88px;
+    /* padding: 50px 144px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+
+
+.main h1{
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-family: Roboto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactform form div input{
+    /* width: 55vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+
+.contactform form{
+    margin: 0 40px;
+}
+
+
+#emailHelp{
+    font-size: 11px;
+    color: blue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+
+#form-check{
+    flex-direction: row;
+}
+
+
+#form-check input{
+    width: 30px;
+    margin: 3px 0;
+}
+
+
+.or{
+    text-align: center;
+    font-size: 35px;
+    /* font-weight: bold; */
+    margin: 20px 0;
+}
+
+
+.mailMe{
+    margin-left: 40px;
+}
+
+
+.personalEmail{
+    margin-left: 40px;
+}
+
+
+.instituteEmail{
+    margin-left: 40px;
+}
+
+
+.educationContainer{
+    background-color: lightgrey;
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+
+.education{
+    font-size: 2.1em;
+    font-weight: bold;
+    font-family: Roboto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.educationBody{
+    font-family: Roboto;
+    margin: 30px 10px 0 10px;
+}
+
+
+.educationBody ul li{
+    margin: 10px 10px 60px 30px;
+    font-family: Roboto;
+}
+
+
+.achievementItem{
+    margin: 20px;
+    margin-left: 35px;
+    font-family: Roboto;
+}
+
+
+.achievementcontainer{
+    margin: 0 88px;
+}
+
+
+#more {display: none;}
+
+
+#myBtn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(0, 100, 100);
+    font-weight: bold;
+    font-size: 1em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+
+h1{
+    font-family: Roboto;
+    margin: 23px;
+}
+
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.aboutMe{
+    margin: 100px 88px;
+}
+
+
+.aboutMe h2{
+    font-family: Roboto;
+    margin: 12px;
+}
+
+
+.aboutMe p{
+    font-family: Roboto;
+    margin: 12px;
+    margin-bottom: 70px;
+    /* height: 30vh; */
+}
+
+
+.skillcontainer{
+    margin-left: 10px;
+}
+
+
+.skillItem{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900
+    display: flex;
+    align-items: center;
+}
+
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+
+.hundred{
+    width: 265px;
+    background-color: red;
+}
+
+
+.seventyFive{
+    width: 190px;
+    background-color: rgba(255, 123, 0, 0.849);
+}
+
+.fifty{
+    width: 75px;
+    background-color: yellow;
+}
+
+
+.language{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin: 70px 0 0 10px;
+}
+
+
+.languageList ul li{
+    font-family: Roboto;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+
+.hobbyContainer{
+    margin: 70px 0 0 10px;
+}
+
+
+.hobbiesHeading{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+
+.hobbiesBody{
+    font-family: Roboto;
+    margin-top: 9px;
+}
+
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.cross{
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1000px) {
+    *{
+        /*background-color: rgb(255, 136, 136);*/
+    }
+    .buttons{
+        font-size: 5px;
+    }
+    .devinfo{
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .devpic{
+        display: none;
+    }
+    .achievementcontainer, .contactform{
+        margin: 50px 8px;
+    }
+    .aboutMe{
+        margin: 100px 8px;
+    }
+    .ham{
+        margin-left: 0;   
+    }
+    .cross{
+        margin-right: 0;
+    }
+ }

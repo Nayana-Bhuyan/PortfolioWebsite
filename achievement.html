@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayana Bhuyan - Web Developer, Programmer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<div class="sidebar sidebarGo" >
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/aboutMe.html">About Me</a></li>
+                <li><a href="/education.html">Education</a></li>
+                <li><a href="/achievement.html">Achievement</a></li>
+                <li><a href="/contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="hamburger">
+            <img class="cross" src="https://e7.pngegg.com/pngimages/14/728/png-clipart-computer-icons-black-and-white-cross-logo-angle-logo-thumbnail.png" alt="" width="35">
+            <img class="ham" src="https://e7.pngegg.com/pngimages/590/292/png-clipart-computer-icons-hamburger-button-icon-design-web-typography-bar-icon-angle-rectangle.png" alt="" width="50">
+        </div>
+        <div class="achievementContainer">
+            <h1>Achievements by Nayana Bhuyan</h1>
+            <div class="achievementItem">
+                <h2>International Olympiads</h2>
+                <p>
+                    <ul>
+                        <li>  
+                            INTERNATIONAL INFORMATICS OLYMPIAD '10 (LEVEL 1) <br>
+                            Class Rank 1, State Rank 1, Olympiad Rank 123
+                        </li>
+                        <li>
+                            INTERNATIONAL INFORMATICS OLYMPIAD '10 (LEVEL 2) <br>
+                            Class Rank 1, State Rank 1, Olympiad Rank 160
+                        </li>
+                        <li>
+                            INTERNATIONAL INFORMATICS OLYMPIAD '11 (LEVEL 1) <br>
+                            Class Rank 1, State Rank 3, Olympiad Rank 185
+                        </li>
+                        <span id="dots">
+                        <li>
+                            INTERNATIONAL INFORMATICS OLYMPIAD '11 (LEVEL 2) <br>
+                            Class Rank 1, State Rank 4, Olympiad Rank 614
+                        </li>
+                        <li>
+                            INTERNATIONAL OLYMPIAD OF MATHEMATICS '11(LEVEL 1) <br>
+                            Class Rank 4, State Rank 9, Olympiad Rank 342
+                        </li>
+                        <li>
+                            INTERNATIONAL OLYMPIAD OF MATHEMATICS '11(LEVEL 2) <br>
+                            Class Rank 4, State Rank 8, Olympiad Rank 333
+                        </li>
+                        <li>
+                            SOF 4TH INTERNATIONAL ENGLISH OLYMPIAD <br>
+                            School Rank 19, City Rank 19, State Rank 391
+                        </li>
+                        <li>
+                            SOF 7TH INTERNATIONAL MATHEMATICS OLYMPIAD <br>
+                            School Rank 3, City Rank 3, State Rank 11, International Rank 332
+                        </li>
+                        <li>
+                            12TH NATIONAL CYBER OLYMPIAD <br>
+                            School Rank 4, City Rank 4, State Rank 24, International Rank 347 
+                        </li>
+                        <li>
+                            SOF 10TH NATIONAL CYBER OLYMPIAD <br>
+                            School Rank 22, City Rank 22, State Rank 52
+                        </li>
+                        <li>
+                            SOF 3RD INTERNATIONAL ENGLISH OLYMPIAD <br>
+                            School Rank 15, City Rank 15, State Rank 218
+                        </li>
+                        <li>
+                            SOF 6TH INTERNATIONAL MATHEMATICS OLYMPIAD <br>
+                            School Rank 10, City Rank 10, State Rank 100
+                        </li>
+                        <li>
+                            SOF 16TH NATIONAL CYBER OLYMPIAD <br>
+                            School Rank 1, City Rank 1, Zonal Rank 106
+                        </li>
+                    </ul>
+                    </span>
+                <span id="more"></span>
+                        </span>
+                </p> 
+                <button onclick="myFunction()" id="myBtn">Read Less</button>              
+                <!-- <button class="btn btn-sm">Read More</button> -->
+            </div>
+            <div class="achievementItem">
+                <h2>Extra-Curricular</h2>
+                <p><ul> 
+                    <li>Bachelor In Music (B.Mus)</li>
+                   <li>10 Years of Certified Art Training</li>
+                </ul>
+                </p>
+                <!-- <button class="btn btn-sm">Read More</button> -->
+            </div>
+            <div class="achievementItem">
+                <h2>Projects</h2>
+                <p><ul>
+                    <li>Website Building Projects </li>
+                    <li>Number Guessing Game Using C</li>
+                    <li>Rock, Paper, Scissors Game Using C</li>
+                </ul></p>
+                <!-- <button class="btn btn-sm">Read More</button> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- <scrip src="script.js"></script> -->
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read Less"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read More"; 
+            moreText.style.display = "inline";
+          }
+        }
+        document.querySelector('.cross').style.display = 'none';
+        document.querySelector('.hamburger').addEventListener("click", ()=>{
+        document.querySelector('.sidebar').classList.toggle('sidebarGo');
+    if(document.querySelector('.sidebar').classList.contains('sidebarGo')){
+        document.querySelector('.ham').style.display = 'inline'
+        document.querySelector('.cross').style.display = 'none'
+    }
+    else{
+        document.querySelector('.ham').style.display = 'none'
+        setTimeout(() => {
+            document.querySelector('.cross').style.display = 'inline'
+        }, 300);
+    }
+})
+    </script>  
+</body>
+</html>
+
+
+
+
+
+
+
